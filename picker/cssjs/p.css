@@ -1,0 +1,28 @@
+.body {
+    margin: 200px;
+}
+
+#gambar {
+    width: 400px;
+    margin-left: 23px;
+}
+
+.gambar {
+    margin-left: 23px;
+}
+
+body {
+    align-content: center;
+    margin: 200px auto;
+    width: 450px;
+    padding: 6px;
+    background: pink;
+}
+
+#listgambar {
+    width: 450px;
+    text-align: center;
+    border-bottom: 30px;
+    margin: 20px auto;
+    margin-right: 60px;
+}
