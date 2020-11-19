@@ -1,0 +1,19 @@
+.body {
+    margin: 200px;
+}
+
+body {
+    align-content: center;
+    margin: 200px auto;
+    width: 450px auto;
+    background-color: paleturquoise;
+}
+
+#tabel {
+    align-content: center;
+    margin: 200px auto;
+    width: 450px auto;
+    border: 3px solid black;
+    box-shadow: 4px 4px 8px black;
+    background: red;
+}
