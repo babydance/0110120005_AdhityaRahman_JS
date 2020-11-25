@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: blue;
+}
+
+
+	
+
+
+
+#kerangka-title {
+	font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 2px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.underline-title {
+    background: -webkit-linear-gradient(right, red,red);
+    height: 3px;
+    margin: -16px auto 0 auto;
+    width: 100px;
+}
+
+.tulisan_login{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+}
+ 
+
+ 
+label{
+	font-size: 12pt;
+	font-family: "Raleway Thin", sans-serif;
+}
+ 
+
+
+ 
+.tombol_login{
+	background: firebrick;
+	color: white;
+	font-size: 11pt;
+	width: 75%;
+	margin-left: 1px;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+	transition-duration: 0.4s;
+}
+.tombol_login:hover {
+  background-color: violet;
+  color: white;
+}
+ 
+.link{
+	color: #232323;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+.dropdown{
+	padding-left: 60px;
+	width: 250px;
+	height: 30px;
+}
+
+.option{
+	align-content: center;
+}
