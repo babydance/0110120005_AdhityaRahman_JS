@@ -1,0 +1,78 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form Validasi</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+	<div id="semua">
+			<h2>TICKET</h2>
+  			
+			<br>
+			
+			
+
+			<form method="request" class="jadwal" id="jadwal" >
+				<input type="text" class="form_login" id="name" name="name" onKeyPress="return maxlength(event)" placeholder="Nama " required="" /><br>
+				<input type="email" class="form_login" id="email" name="email" placeholder="Email" required /><br>
+ 				<input type="time" class="form_login" id="jam" name="jam" required /><br>
+				
+							<select  name="tujuan" class="form_loginn" id="tujuan" required>
+								<option value="" disabled selected>Select Country</option>
+								<option value="ITALY"> ITALY  </option>
+								<option value="JAPAN"> JAPAN  </option>
+								<option value="CHINA"> CHINA  </option>
+								<option value="KOREA"> KOREA  </option>
+								<option value="MALAYSIA"> MALAYSIA  </option>
+								<option value="IRAK"> IRAK </option>
+							</select>
+					
+					
+				<br>
+				<input type="text" class="form_login" id="tiket" name="tiket" placeholder="Jumlah Tiket " onKeyUp="angka(this)" maxlength="2" required />
+				<br>
+ 				
+				<input type="submit" class="tombol_login" onClick="return validasi()" value="Kirim">
+			</form>
+		
+	</div>
+			<script>
+				function maxlength(evt) {
+	var panjangnama = document.getElementById("name").value;
+	if (panjangnama.length >= 20  ){
+		window.alert("Max Length 30");
+		return false;
+	}
+}
+
+function angka(e) {
+  var max = document.getElementById("tiket").value;
+  if (!/^[0-9]+$/.test(e.value)) {
+	window.alert("Masukkan jumlah tiket dengan benar");
+    e.value = e.value.substring(0,e.value.length-1);
+	max.length = 2;
+  }
+}
+
+function validasi() {
+	var nama = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+	var jam  = document.getElementById("jam").value;
+	var tujuan  = document.getElementById("tujuan").value;
+	var tiket = document.getElementById("tiket").value;
+	
+	if (nama && email && jam  && tujuan  && tiket ) {
+		document.getElementById("jadwal").innerHTML= "Nama : " + nama + "<br>" + "Email : " 
+		+ email + "<br>" + "Jam Berangkat : " + jam + "<br>" + "Tujuan : " +tujuan + "<br>" + "Jumlah Tiket : " + tiket + "<br><br>" + "Happy Travelling yeay";
+		return false;
+	}else{
+		alert("Harap Isi dengan Benar");
+	}	
+}
+			</script>
+			
+		
+	</body>
+</html>
